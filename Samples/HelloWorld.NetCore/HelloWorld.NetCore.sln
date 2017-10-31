@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloHost", "src\SiloHost\SiloHost.csproj", "{8833CADE-80B5-4AA1-835E-594E907C58DF}"
 EndProject
@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		NuGet.Config = NuGet.Config
 		Readme.md = Readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Lib1", "HelloWorld.Lib1\HelloWorld.Lib1.csproj", "{7CCEFF80-AA5F-4607-B0E3-1F412D89F351}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{C8097F83-2D0E-4FFD-AEAE-AA075141289C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8097F83-2D0E-4FFD-AEAE-AA075141289C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8097F83-2D0E-4FFD-AEAE-AA075141289C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CCEFF80-AA5F-4607-B0E3-1F412D89F351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CCEFF80-AA5F-4607-B0E3-1F412D89F351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CCEFF80-AA5F-4607-B0E3-1F412D89F351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CCEFF80-AA5F-4607-B0E3-1F412D89F351}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

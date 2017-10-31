@@ -2,6 +2,8 @@
 using Orleans;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using HelloWorld.Lib1;
+using SqlStreamStore;
 
 namespace HelloWorld.Grains
 {
@@ -10,6 +12,15 @@ namespace HelloWorld.Grains
         public async Task<string> SayHello(string greeting)
         {
             State.Greetings.Add(greeting);
+
+            // reference some types
+            // to force loading of the assemblies
+            var t1 = new[]
+            {
+                typeof(SomeClassFromLib1),
+                typeof(IStreamStore),
+                typeof(MsSqlStreamStore)
+            };
 
             await WriteStateAsync();
 

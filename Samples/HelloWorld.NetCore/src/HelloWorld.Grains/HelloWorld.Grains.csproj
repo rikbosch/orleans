@@ -1,12 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+   
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="$(OrleansPackageVersion)" />
-    <PackageReference Include="Microsoft.Orleans.OrleansCodeGenerator.Build" Version="$(OrleansPackageVersion)" PrivateAssets="All" />
+    <PackageReference Include="Dapper.FastCrud" Version="2.4.1" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.6.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="2.0.0-beta1" />
+    <PackageReference Include="Microsoft.Orleans.EventSourcing" Version="2.0.0-beta1" />
+    <PackageReference Include="Microsoft.Orleans.OrleansCodeGenerator.Build" Version="2.0.0-beta1" />
+    <PackageReference Include="Microsoft.Orleans.OrleansProviders" Version="2.0.0-beta1" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Polly" Version="5.3.1" />
+    <PackageReference Include="SqlStreamStore" Version="1.1.1" />
+    <PackageReference Include="SqlStreamStore.MsSql" Version="1.1.1" />
+    <PackageReference Include="System.Net.Http" Version="4.3.3" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.4.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" version="4.4.0" />
+    <PackageReference Include="System.Collections.Immutable" version="1.4.0" />
+    <PackageReference Include="System.Data.SqlClient" version="4.4.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HelloWorld.Interfaces\HelloWorld.Interfaces.csproj" />
+    <ProjectReference Include="..\..\HelloWorld.Lib1\HelloWorld.Lib1.csproj" />
+    
   </ItemGroup>
 </Project>
